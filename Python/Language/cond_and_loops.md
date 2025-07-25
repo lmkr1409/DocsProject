@@ -5,20 +5,21 @@
 - [Conditionals](#conditionals)
     - [Python expressions for conditionals](#python-expressions-for-conditionals)
     - [ID Function](#id-function)
-- [Data Types](#data-types)
-
 
 # Running Python
-1. From command prompt
+
+1.  From command prompt
 
         python filename.py
-2. From Python interpreter
-        
+
+2.  From Python interpreter
+
         >>> exec(open('filename.py').read())
-        
-    This can be written as 
+
+    This can be written as
 
         >>> exec(fileObject, global_variable, local_variable)
+
     Where global_variable and local_variable are optional parameters.
 
 ## Exit Python
@@ -31,8 +32,8 @@ python is dynamically typed language, variable are assigned automatically.
 
 ### Q. What is typing of a language?
 
-
 <br/>A.) Typing of a language is 2 parts
+
 > Static/Dynamic Typing is about when type information is acquired.(Either compile time or runtime)
 
 Example:
@@ -40,26 +41,32 @@ Example:
 ```Java
 String var = "String Value";
 ```
+
 In Java typing information is quired at compile time. If we assign like below
+
 ```java
 var = 5;
 ```
+
 java will raise an error at compile time.
 
 > Strong/Weak Typing is about how strictly types are distinguished.
 
 Example:
 In Python
+
 ```python
 output = 5+"string"
 ```
+
 will raise a **TypeError** where as in PHP it won't.
 
 So, Python is dynamically strongly typed language
 
-
 # Conditionals
+
 Key words: **if**, **elif**, **else**
+
 ```python
 if a<b:
     print("a")
@@ -75,12 +82,17 @@ Conditionals can perform boolean expressions by using **and**, **or**, **not** k
 if a<b and b>c:
     print("B is greater than A and C")
 ```
+
+There is no switch case in python.
+
 ### Python expressions for conditionals
 
 ```python
 expression1 if boolean_expression else expression2
 ```
+
 Few examples:
+
 ```python
 >>> 5 if True else 10
 5
@@ -95,8 +107,9 @@ Few examples:
 ### ID Function
 
 id() function takes an object as a parameter returns the identity of that object.
+
 ```python
->>> n = 5 
+>>> n = 5
 >>> id(n)
 xyz #Some random number
 >>> m = n
@@ -108,24 +121,3 @@ xy #Another random number
 >>> id(m)
 xyz
 ```
-
-# Data Types
-We can split data types in python to several types
-* Numeric Data Types
-    * int
-    * float
-    * complex number
-* [Sequence Types](important_topics.html)
-    * bytearray
-    * bytes
-    * str
-    * list
-    * tuple
-* Set Types
-    * set
-    * frozenset
-* Mapping Types
-    * dict
-    * defaultdict
-    * OrderedDict
-* boolean
