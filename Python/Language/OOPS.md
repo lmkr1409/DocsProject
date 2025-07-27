@@ -22,7 +22,7 @@
 - [Encapsulation](#encapsulation)
   - [Private Name Mangling](#private-name-mangling)
 - [Private Variables](#private-variables)
-  - [Q) Create a private method using a decorator](#q-create-a-private-method-using-a-decorator)
+  - [Q. Create a private method using a decorator](#q-create-a-private-method-using-a-decorator)
 
 # Object Oriented Programming
 
@@ -934,7 +934,7 @@ True
 - Even if dir(y) = dir(x), if we check the address of x and y they are different.
 - The above example would work even if MappingSubClass were to introduce **update method since it is replace with \_Mapping**update in the Mapping class and \_MappingSubclass\_\_update in the MappingSubClass
 
-### Q) Create a private method using a decorator
+### Q. Create a private method using a decorator
 
 ```python
 >>> import sys, functools
